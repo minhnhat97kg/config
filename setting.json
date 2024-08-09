@@ -1,0 +1,19 @@
+{
+  "message": "Bạn nhận được {{amount}} đồng",
+  "apps": [
+    {
+      "packageName": "",
+      "regexes": ["\\+ VND (?<amount>\\d+([.,]\\d+)?)"],
+      "replaces": [
+        {
+          "from": ",",
+          "to": ""
+        },
+        {
+          "from": ".",
+          "to": ""
+        }
+      ]
+    }
+  ]
+}
