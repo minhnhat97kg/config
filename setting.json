@@ -3,7 +3,10 @@
   "apps": [
     {
       "packageName": "",
-      "regexes": ["\\+ VND (?<amount>\\d+([.,]\\d+)?)"],
+      "regexes": [
+        "\\+ VND (?<amount>\\d+([.,]\\d+)?)",
+        "\\+(?<amount>\\d+([.,]\\d+)?)VND"
+      ],
       "replaces": [
         {
           "from": ",",
